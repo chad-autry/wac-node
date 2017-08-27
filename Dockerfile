@@ -1,4 +1,3 @@
-FROM gliderlabs/alpine:3.4
-RUN apk add --no-cache nodejs
+FROM mhart/alpine-node:base-8.4.0
 WORKDIR /app
 ENTRYPOINT ["node", "/app/src/index.js"]
